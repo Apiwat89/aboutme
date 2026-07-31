@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ระบบรายงาน HR อัตโนมัติ — Apiwat Ketsawong</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="grain"></div>
+
+<nav class="case-nav">
+  <a class="case-back" href="home.html#work">← กลับไปหน้าผลงาน</a>
+  <div class="monogram"><span>AK</span></div>
+</nav>
+
+<section class="case-hero">
+  <div class="eyebrow">Internship — Digital HR</div>
+  <h1 class="case-title">ระบบรายงาน<span class="brass-text"> HR อัตโนมัติ</span></h1>
+  <div class="case-meta-row">
+    <div class="item"><div class="l">บทบาท</div><div class="v">Full Stack Developer</div></div>
+    <div class="item"><div class="l">ระยะเวลา</div><div class="v">1 เดือน</div></div>
+    <div class="item"><div class="l">ทีม</div><div class="v">AI</div></div>
+    <div class="item"><div class="l">ช่วงเวลา</div><div class="v">พ.ย. 2025 – ธ.ค. 2026</div></div>
+  </div>
+</section>
+
+<div class="case-frame"><img src="image/report1.png" alt="ระบบรายงาน HR อัตโนมัติ"></div>
+<div class="case-frame"><img src="image/report2.png" alt="ระบบรายงาน HR อัตโนมัติ"></div>
+<div class="case-frame"><img src="image/report3.png" alt="ระบบรายงาน HR อัตโนมัติ"></div>
+
+<div class="case-results">
+  <div class="r"><div class="n">90%</div><div class="l">ลดเวลาทำสไลด์ด้วยมือ</div></div>
+  <div class="r"><div class="n">Local-only</div><div class="l">ไม่มี Host สาธารณะ</div></div>
+</div>
+
+<div class="case-body">
+  <h3>โจทย์</h3>
+  <p>ทีม HR ต้องแปลงข้อมูลโปรไฟล์ผู้ใช้ให้เป็นสไลด์รายงานอยู่บ่อยครั้ง ซึ่งเดิมทำด้วยมือทุกครั้งและใช้เวลานาน อีกทั้งข้อมูลที่ใช้เป็นข้อมูลโปรไฟล์พนักงานซึ่งเป็นข้อมูลละเอียดอ่อน จึงไม่ควรเปิดเป็นเว็บสาธารณะ</p>
+
+  <h3>แนวทางแก้ปัญหา</h3>
+  <p>สร้างเครื่องมือเว็บที่รับข้อมูลผู้ใช้ที่กรอกเข้ามา แล้วแปลงให้กลายเป็นสไลด์ PowerPoint รูปแบบมาตรฐานโดยอัตโนมัติ ตัดขั้นตอนการจัดรูปแบบสไลด์ด้วยมือออกไปเกือบทั้งหมด โดยออกแบบให้เป็นเว็บแอปที่รันบนเครื่อง (local) แทนการขึ้น host สาธารณะ เพื่อความปลอดภัยของข้อมูล</p>
+
+  <h3>เทคนิคที่ใช้</h3>
+  <p>พัฒนาเป็นเว็บทูลด้วย Node.js ที่รับข้อมูลจากฟอร์ม ประมวลผล และสร้างไฟล์สไลด์ตามเทมเพลตที่กำหนดไว้ให้อัตโนมัติ ตัวแอปไม่ได้ขึ้น host ไว้ที่ไหน แต่ใช้งานได้ทันทีด้วยการโหลดโฟลเดอร์โปรเจกต์แล้วรันผ่าน localhost บนเครื่อง เวลาส่งต่องานให้ทีมอื่นทำต่อก็ zip ทั้งโฟลเดอร์ส่งไปรันต่อได้เลย</p>
+
+  <h3>ผลลัพธ์</h3>
+  <p>ลดเวลาที่ทีมใช้เตรียมสไลด์รายงานโปรไฟล์ด้วยมือลงกว่า 90% ทำให้ทีม HR โฟกัสกับงานส่วนอื่นได้มากขึ้น พร้อมทั้งเก็บข้อมูลพนักงานให้ปลอดภัยเพราะไม่มีการเปิดเข้าถึงผ่านอินเทอร์เน็ต</p>
+
+  <div class="project-tags" style="margin-top:32px;">
+    <span>Node.js</span><span>PowerPoint Automation</span><span>Local Web App</span>
+  </div>
+</div>
+
+<div class="case-cta">
+  <a class="case-back" href="project-1.html">← โปรเจกต์ก่อนหน้า: AI Smart Dashboard</a>
+  <a class="case-back" href="project-3.html">โปรเจกต์ถัดไป: การตรวจจับพฤติกรรมเสี่ยงของผู้ขับขี่ยานพาหนะ →</a>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

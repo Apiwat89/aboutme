@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ตรวจจับพฤติกรรมเสี่ยงขณะขับขี่ด้วย YOLO และ MediaPipe Pose — Apiwat Ketsawong</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="grain"></div>
+
+<nav class="case-nav">
+  <a class="case-back" href="home.html#work">← กลับไปหน้าผลงาน</a>
+  <div class="monogram"><span>AK</span></div>
+</nav>
+
+<section class="case-hero">
+  <div class="eyebrow">Student Project — Machine Learning</div>
+  <h1 class="case-title">ตรวจจับพฤติกรรมเสี่ยงขณะขับขี่<span class="brass-text">ด้วย YOLO และ MediaPipe Pose</span></h1>
+  <div class="case-meta-row">
+    <div class="item"><div class="l">บทบาท</div><div class="v">ML Developer</div></div>
+    <div class="item"><div class="l">ระยะเวลา</div><div class="v">2 เดือน</div></div>
+    <div class="item"><div class="l">ทีม</div><div class="v">เดี่ยว</div></div>
+    <div class="item"><div class="l">ช่วงเวลา</div><div class="v">ก.พ. 2025 – มี.ค. 2025</div></div>
+  </div>
+</section>
+
+<div class="case-frame"><img src="image/detect.png" alt="ตรวจจับพฤติกรรมเสี่ยงขณะขับขี่"></div>
+
+<div class="case-results">
+  <div class="r"><div class="n">YOLO + MediaPipe</div><div class="l">เทคนิคที่ใช้ตรวจจับ</div></div>
+  <div class="r"><div class="n">Very Good</div><div class="l">รางวัลการนำเสนอ AUCC 2026</div></div>
+</div>
+
+<div class="case-body">
+  <h3>โจทย์</h3>
+  <p>ต้องการสร้างระบบที่สามารถระบุและจำแนกพฤติกรรมเสี่ยงของผู้ขับขี่จากภาพและวิดีโอได้ เพื่อเป็นแนวทางในการเฝ้าระวังความปลอดภัยบนท้องถนน</p>
+
+  <h3>แนวทางแก้ปัญหา</h3>
+  <p>เก็บรวบรวมภาพจาก Roboflow และทำการ annotate ชุดข้อมูลเองให้เจาะจงกับสถานการณ์พฤติกรรมการขับขี่ จากนั้นฝึกโมเดล object detection เพื่อระบุและจำแนกพฤติกรรมจากภาพและวิดีโอที่ใช้งานผ่านเว็บได้</p>
+
+  <h3>เทคนิคที่ใช้</h3>
+  <p>ใช้สถาปัตยกรรม YOLOv8s ในการตรวจจับวัตถุ ร่วมกับ MediaPipe Pose สำหรับวิเคราะห์ท่าทางของผู้ขับขี่ ฝึกโมเดลด้วย Python บนชุดข้อมูลที่เตรียมเอง และนำเสนอผลงานในหัวข้อ "Vehicle Driver Risky Behavior Detection using YOLO and MediaPipe Pose"</p>
+
+  <h3>ผลลัพธ์</h3>
+  <p>ได้รับรางวัลระดับ "Very Good" จากการนำเสนอผลงานในงาน AUCC 2026 และได้ประสบการณ์ตรงในการทำ object detection ตั้งแต่การเตรียมข้อมูลจนถึงการฝึกโมเดล</p>
+
+  <div class="project-tags" style="margin-top:32px;">
+    <span>YOLOv8</span><span>Python</span><span>Roboflow</span><span>MediaPipe Pose</span>
+  </div>
+</div>
+
+<div class="case-cta">
+  <a class="case-back" href="project-2.html">← โปรเจกต์ก่อนหน้า: ระบบรายงาน HR อัตโนมัติ</a>
+  <a class="plaque-btn primary" href="home.html#contact">ติดต่อผมได้</a>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

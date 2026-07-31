@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Smart Dashboard — Apiwat Ketsawong</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="grain"></div>
+
+<nav class="case-nav">
+  <a class="case-back" href="home.html#work">← กลับไปหน้าผลงาน</a>
+  <div class="monogram"><span>AK</span></div>
+</nav>
+
+<section class="case-hero">
+  <div class="eyebrow">Internship — Digital HR</div>
+  <h1 class="case-title">AI Smart<span class="brass-text"> Dashboard</span></h1>
+  <div class="case-meta-row">
+    <div class="item"><div class="l">บทบาท</div><div class="v">Full Stack Developer</div></div>
+    <div class="item"><div class="l">ระยะเวลา</div><div class="v">3 เดือน</div></div>
+    <div class="item"><div class="l">ทีม</div><div class="v">AI</div></div>
+    <div class="item"><div class="l">ช่วงเวลา</div><div class="v">ธ.ค. 2025 – ก.พ. 2026</div></div>
+  </div>
+</section>
+
+<div class="case-frame"><img src="image/dashboard1.png" alt="AI Smart Dashboard"></div>
+<div class="case-frame"><img src="image/dashboard2.jpg" alt="AI Smart Dashboard"></div>
+
+<div class="case-results">
+  <div class="r"><div class="n">React + Node.js</div><div class="l">Frontend + Backend</div></div>
+  <div class="r"><div class="n">Power BI + Azure</div><div class="l">แสดงกราฟ + ล็อกอินอีเมลบริษัท</div></div>
+  <div class="r"><div class="n">BigQuery</div><div class="l">เก็บ Usage Log</div></div>
+</div>
+
+<div class="case-body">
+  <h3>โจทย์</h3>
+  <p>ทีม AI ต้องการเครื่องมือช่วยติดตามการใช้งาน AI ของพนักงาน แต่ยังไม่มีระบบกลางที่รวบรวมและแสดงข้อมูลให้ดูง่ายในที่เดียว</p>
+
+  <h3>แนวทางแก้ปัญหา</h3>
+  <p>พัฒนาเว็บแดชบอร์ดที่ให้ทีมพัฒนา AI ดูข้อมูลการใช้งาน AI ผ่านกราฟแบบโต้ตอบ คลิกเพื่อสอบถาม AI เพิ่มเติมได้ในหน้าเดียวกัน พร้อมออกแบบให้ AI ตอบกลับได้ทั้งข้อความสรุปและเสียงพูด (Text-to-Speech) เพื่อให้ใช้งานได้สะดวกหลายรูปแบบ</p>
+
+  <h3>เทคนิคที่ใช้</h3>
+  <p>ระบบแบ่งเป็นชั้นที่ทำงานร่วมกัน: <strong>ชั้นหน้าบ้าน</strong> ใช้ React แสดงกราฟและรับการโต้ตอบจากผู้ใช้ <strong>ชั้นหลังบ้าน</strong> ใช้ Node.js เป็นตัวกลางรับคำขอ ส่งต่อไปยังระบบ AI เพื่อประมวลผลภาษาและแปลงคำตอบเป็นทั้งข้อความและเสียงพูด ก่อนส่งกลับมาแสดงที่หน้าเว็บ กราฟที่ใช้แสดงผลสร้างจาก Power BI แล้วฝังเข้าเว็บผ่าน Azure ซึ่ง Azure ยังทำหน้าที่จำกัดการเข้าใช้งานเฉพาะอีเมลบริษัท (ล็อกอิน/สิทธิ์การเข้าถึง) ส่วนข้อมูลการใช้งานเว็บ (usage log) ถูกเก็บแยกไว้ใน BigQuery</p>
+
+  <h3>ผลลัพธ์</h3>
+  <p>ทีม AI ดูข้อมูลการใช้งาน AI ของพนักงานได้สะดวกขึ้นผ่านกราฟแบบโต้ตอบในหน้าเดียว แทนที่จะต้องรวบรวมข้อมูลจากหลายแหล่งด้วยมือ</p>
+
+  <div class="project-tags" style="margin-top:32px;">
+    <span>React</span><span>Node.js</span><span>Text-to-Speech</span><span>Power BI</span><span>Azure</span><span>BigQuery</span>
+  </div>
+</div>
+
+<div class="case-cta">
+  <a class="case-back" href="project-2.html">โปรเจกต์ถัดไป: ระบบรายงาน HR อัตโนมัติ →</a>
+  <a class="plaque-btn primary" href="home.html#contact">ติดต่อผมได้</a>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
