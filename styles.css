@@ -430,3 +430,32 @@
   a:focus-visible, .plaque-btn:focus-visible{
     outline:1px solid var(--brass-bright); outline-offset:4px;
   }
+
+.logo {
+  width: 45px;
+  margin-top: -5px;
+  margin-bottom: -5px;
+}
+
+.plaque-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.plaque-btn svg {
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.plaque-btn:hover svg {
+  transform: translateY(-1px);
+}
+
+/* ยกเลิกการบังคับพิมพ์ใหญ่เฉพาะปุ่มในส่วนติดต่อ/ท้ายเว็บ */
+.footer-links .plaque-btn {
+  text-transform: none;
+  letter-spacing: 0.5px; /* ปรับระยะห่างตัวอักษรให้อ่านง่ายขึ้น */
+}
+

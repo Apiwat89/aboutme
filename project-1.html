@@ -3,11 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI Smart Dashboard — Apiwat Ketsawong</title>
+<title>Trade Journal & Analytics Platform — Apiwat Ketsawong</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+<link rel="icon" type="image/png" href="image/logo.png">
 </head>
 <body>
 
@@ -15,50 +16,64 @@
 
 <nav class="case-nav">
   <a class="case-back" href="index.html#work">← กลับไปหน้าผลงาน</a>
-  <div class="monogram"><span>AK</span></div>
+    <img class="logo" src="image/logo.png" alt="Apiwat Ketsawong">
 </nav>
 
 <section class="case-hero">
-  <div class="eyebrow">Internship — Digital HR</div>
-  <h1 class="case-title">AI Smart<span class="brass-text"> Dashboard</span></h1>
+  <div class="eyebrow">Personal Project — Web Application (Micro-SaaS)</div>
+  <h1 class="case-title">ระบบบันทึกและวิเคราะห์การเทรด<span class="brass-text"> Trade Journal</span></h1>
   <div class="case-meta-row">
     <div class="item"><div class="l">บทบาท</div><div class="v">Full Stack Developer</div></div>
-    <div class="item"><div class="l">ระยะเวลา</div><div class="v">3 เดือน</div></div>
-    <div class="item"><div class="l">ทีม</div><div class="v">AI</div></div>
-    <div class="item"><div class="l">ช่วงเวลา</div><div class="v">ธ.ค. 2025 – ก.พ. 2026</div></div>
+    <div class="item"><div class="l">ระยะเวลา</div><div class="v">1+ เดือน</div></div>
+    <div class="item"><div class="l">ทีม</div><div class="v">เดี่ยว</div></div>
+    <div class="item"><div class="l">ช่วงเวลา</div><div class="v">ส.ค. 2026 – ปัจจุบัน</div></div>
+    <div class="item">
+      <div class="l">ระบบจริง</div>
+      <div class="v">
+        <a href="https://trading-journal-beige-omega.vercel.app" target="_blank" rel="noopener noreferrer" style="color:var(--brass-bright); text-decoration:underline; text-underline-offset:4px;">
+          Live Demo ↗
+        </a>
+      </div>
+    </div>
   </div>
 </section>
 
-<div class="case-frame"><img src="image/dashboard1.png" alt="AI Smart Dashboard"></div>
-<div class="case-frame"><img src="image/dashboard2.jpg" alt="AI Smart Dashboard"></div>
+<div class="case-frame"><img src="image/trade1.png" alt="Trade Journal Landing Page"></div>
+<div class="case-frame"><img src="image/trade2.png" alt="Trade Journal Landing Page"></div>
 
 <div class="case-results">
-  <div class="r"><div class="n">React + Node.js</div><div class="l">Frontend + Backend</div></div>
-  <div class="r"><div class="n">Power BI + Azure</div><div class="l">แสดงกราฟ + ล็อกอินอีเมลบริษัท</div></div>
-  <div class="r"><div class="n">BigQuery</div><div class="l">เก็บ Usage Log</div></div>
+  <div class="r"><div class="n">End-to-End</div><div class="l">พัฒนาตั้งแต่ Frontend ถึง Payment</div></div>
+  <div class="r"><div class="n">Secure Auth</div><div class="l">ระบบยืนยันตัวตนผ่าน Supabase</div></div>
+  <div class="r"><div class="n">UX/UI</div><div class="l">แอนิเมชันลื่นไหล & Responsive</div></div>
 </div>
 
 <div class="case-body">
-  <h3>โจทย์</h3>
-  <p>ทีม AI ต้องการเครื่องมือช่วยติดตามการใช้งาน AI ของพนักงาน แต่ยังไม่มีระบบกลางที่รวบรวมและแสดงข้อมูลให้ดูง่ายในที่เดียว</p>
+  <h3>โจทย์และที่มาของโปรเจกต์</h3>
+  <p>การบันทึกข้อมูลการเทรดด้วยเครื่องมือทั่วไปอย่าง Excel มีข้อจำกัดเรื่องการวิเคราะห์ข้อมูลเชิงลึก การแนบภาพกราฟ และขาดการสรุปผลแบบอัตโนมัติ ผมจึงต้องการสร้างระบบที่ช่วยให้เทรดเดอร์สามารถบันทึกข้อมูลได้สะดวกขึ้น และมีเครื่องมือช่วยค้นหาจุดแข็ง-จุดอ่อนของกลยุทธ์ตัวเองได้อย่างเป็นระบบ</p>
 
   <h3>แนวทางแก้ปัญหา</h3>
-  <p>พัฒนาเว็บแดชบอร์ดที่ให้ทีมพัฒนา AI ดูข้อมูลการใช้งาน AI ผ่านกราฟแบบโต้ตอบ คลิกเพื่อสอบถาม AI เพิ่มเติมได้ในหน้าเดียวกัน พร้อมออกแบบให้ AI ตอบกลับได้ทั้งข้อความสรุปและเสียงพูด (Text-to-Speech) เพื่อให้ใช้งานได้สะดวกหลายรูปแบบ</p>
+  <p>พัฒนา Web Application ในรูปแบบ Micro-SaaS ที่รวมฟังก์ชันการจดบันทึกและการคำนวณสถิติสำคัญ (เช่น Win Rate, R:R, Drawdown) ไว้ในที่เดียว โดยมีฟีเจอร์ AI Coach ช่วยสรุปพฤติกรรมการเทรด พร้อมออกแบบระบบหลังบ้านให้รองรับโมเดล Subscription สำหรับผู้ใช้งานระดับ Pro</p>
 
-  <h3>เทคนิคที่ใช้</h3>
-  <p>ระบบแบ่งเป็นชั้นที่ทำงานร่วมกัน: <strong>ชั้นหน้าบ้าน</strong> ใช้ React แสดงกราฟและรับการโต้ตอบจากผู้ใช้ <strong>ชั้นหลังบ้าน</strong> ใช้ Node.js เป็นตัวกลางรับคำขอ ส่งต่อไปยังระบบ AI เพื่อประมวลผลภาษาและแปลงคำตอบเป็นทั้งข้อความและเสียงพูด ก่อนส่งกลับมาแสดงที่หน้าเว็บ กราฟที่ใช้แสดงผลสร้างจาก Power BI แล้วฝังเข้าเว็บผ่าน Azure ซึ่ง Azure ยังทำหน้าที่จำกัดการเข้าใช้งานเฉพาะอีเมลบริษัท (ล็อกอิน/สิทธิ์การเข้าถึง) ส่วนข้อมูลการใช้งานเว็บ (usage log) ถูกเก็บแยกไว้ใน BigQuery</p>
+  <h3>เทคนิคและการพัฒนาเชิงลึก</h3>
+  <p>โปรเจกต์นี้เน้นการแก้ปัญหาที่มักพบในการทำเว็บระดับโปรดักชัน (Production-Ready) โดยแบ่งส่วนสำคัญดังนี้:</p>
+  <p>
+    • <strong>Frontend & UX/UI:</strong> พัฒนาด้วย React และ React Router DOM ให้ความสำคัญกับประสบการณ์ใช้งาน (UX) ตั้งแต่การทำแบนเนอร์โปรโมชันแบบ Interactive ไปจนถึงการปรับแต่ง CSS โดยใช้ <code>translate3d</code> เพื่อดึง Hardware Acceleration มาช่วยให้แอนิเมชันลื่นไหล (60fps) แม้บนอุปกรณ์มือถือ<br>
+    • <strong>Backend & Secure Authentication:</strong> ใช้ Supabase (PostgreSQL) ในการจัดการฐานข้อมูลและระบบสิทธิผู้ใช้งาน (Auth) มีการเขียน Logic ป้องกันอีเมลขยะ (Email Domain Whitelisting) ให้อนุญาตเฉพาะโดเมนจริง เช่น Gmail หรือ Outlook รวมถึงออกแบบ Flow การรีเซ็ตรหัสผ่านแบบ Redirect Token ที่ทำให้ผู้ใช้กลับเข้าสู่ระบบได้อย่างไร้รอยต่อ<br>
+    • <strong>Payment Integration:</strong> บูรณาการ Stripe API สำหรับระบบตัดบัตรเครดิตอัตโนมัติ โดยใช้ Express.js รับ Webhook Event จาก Stripe เพื่ออัปเดตสิทธิ์ใช้งาน (Tier) ของผู้ใช้ในฐานข้อมูลแบบเรียลไทม์<br>
+    • <strong>Data Analytics:</strong> พัฒนาระบบประมวลผลข้อมูลการเทรด พร้อมจำลอง AI Coach ที่สามารถแจ้งเตือนข้อมูลเชิงลึกได้ เช่น <em>"พบสถิติการขาดทุนสะสม (Drawdown) สูงสุดในช่วง London Session วันศุกร์ แนะนำให้ปรับลดขนาด Position"</em>
+  </p>
 
-  <h3>ผลลัพธ์</h3>
-  <p>ทีม AI ดูข้อมูลการใช้งาน AI ของพนักงานได้สะดวกขึ้นผ่านกราฟแบบโต้ตอบในหน้าเดียว แทนที่จะต้องรวบรวมข้อมูลจากหลายแหล่งด้วยมือ</p>
+  <h3>ผลลัพธ์ที่ได้เรียนรู้</h3>
+  <p>โปรเจกต์นี้ทำให้ผมได้ฝึกฝนทักษะการเป็น Full Stack Developer แบบครบวงจร ตั้งแต่การออกแบบ UI/UX ให้ใช้งานง่าย, การจัดการ Routing และ State ของแอปพลิเคชัน, การวางโครงสร้างฐานข้อมูลที่มีความปลอดภัย, ไปจนถึงการรับมือกับ 3rd-Party API (Stripe) ถือเป็นผลงานที่แสดงให้เห็นถึงความพร้อมในการพัฒนาซอฟต์แวร์ที่นำไปใช้งานจริงได้</p>
 
   <div class="project-tags" style="margin-top:32px;">
-    <span>React</span><span>Node.js</span><span>Text-to-Speech</span><span>Power BI</span><span>Azure</span><span>BigQuery</span>
+    <span>React</span><span>Supabase</span><span>Stripe API</span><span>UX/UI Design</span><span>PostgreSQL</span>
   </div>
 </div>
 
 <div class="case-cta">
-  <a class="case-back" href="project-2.html">โปรเจกต์ถัดไป: ระบบรายงาน HR อัตโนมัติ →</a>
   <a class="plaque-btn primary" href="index.html#contact">ติดต่อผมได้</a>
+  <a class="case-back" href="project-2.html">โปรเจกต์ถัดไป →</a>
 </div>
 
 <script src="script.js"></script>
